@@ -10,6 +10,14 @@
 
 		<transition
 			mode="out-in"
+			enter-active-class="animate__animated animate__fadeInDown"
+			leave-active-class="animate__animated animate__bounceOutUp"
+		>
+			<ActionPanel v-if="actionPanel && gameStarted" />
+		</transition>
+
+		<transition
+			mode="out-in"
 			enter-active-class="animate__animated animate__fadeIn"
 			leave-active-class="animate__animated animate__bounceOutUp"
 		>
@@ -22,33 +30,35 @@
 </template>
 
 <script>
-	import { mapGetters } from "vuex";
+import { mapGetters } from "vuex";
 
-	import Board from "@/components/Board.vue";
-	import Credits from "@/components/Credits.vue";
-	import NewGamePanel from "@/components/NewGamePanel.vue";
-	import Throw from "@/components/Throw.vue";
+import Board from "@/components/Board.vue";
+import Credits from "@/components/Credits.vue";
+import NewGamePanel from "@/components/NewGamePanel.vue";
+import ActionPanel from "@/components/ActionPanel.vue";
+import Throw from "@/components/Throw.vue";
 
-	export default {
-		name: "Home",
-		components: {
-			Board,
-			Credits,
-			NewGamePanel,
-			Throw,
-		},
-		computed: {
-			...mapGetters(["gameStarted"]),
-		},
-	};
+export default {
+	name: "Home",
+	components: {
+		Board,
+		Credits,
+		NewGamePanel,
+		Throw,
+		ActionPanel,
+	},
+	computed: {
+		...mapGetters(["gameStarted", "actionPanel"]),
+	},
+};
 </script>
 
 <style lang="scss" scoped>
-	#game {
-		position: relative;
-		height: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+#game {
+	position: relative;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 </style>
