@@ -2,72 +2,44 @@
 	<div id="panel">
 		<h1>OR Jaar(verslag)spel</h1>
 		<p>
-			Welkom bij het OR-Jaarverslag spel. Met dit spel willen we jullie op een
-			leuke manier mee terug nemen naar het 2020 jaar. Het was een roerig jaar door
-			Corona. Dit w<br /><br />
-			Speel het spel en probeer 2020 te verslaan.
+			Welkom bij het OR-Jaarverslag spel. Met dit spel willen we jullie op
+			een leuke manier mee terug nemen naar het or-jaar 2020. Het was een
+			roerig jaar door Corona waar we het allemaal zwaar mee hebben gehad.
+			Tijdens dit spel kom je achter alle OR-onderwerpen die dit jaar
+			hebben gespeeld.
 		</p>
-		<a class="btn" @click="$store.commit('gameStarted', true)">Start het spel</a>
+		<p class="mb-1">Wat is jouw naam:</p>
+		<input id="name" v-model="name" type="text" /><br />
+
+		<p>Speel het spel en probeer 2020 te verslaan.</p>
+		<a class="btn" @click="click()">Start het spel</a>
 	</div>
 </template>
 
 <script>
-export default {};
+	const clickSound = new Audio(require("@/assets/sounds/click.ogg"));
+
+	export default {
+		computed: {
+			name: {
+				// getters
+				get() {
+					return this.$store.getters.name;
+				},
+				// setter
+				set(val) {
+					this.$store.commit("name", val);
+				},
+			},
+		},
+		methods: {
+			click() {
+				clickSound.play();
+				this.$store.commit("gameStarted", true);
+			},
+		},
+	};
 </script>
 
 <style lang="scss" scoped>
-#panel {
-	position: absolute;
-
-	// Set Size
-	width: 70vw;
-	max-width: calc(70vh * 13.4 / 9);
-	height: calc(70vw * 9 / 13.4);
-	max-height: 70vh;
-
-	// Background
-	background: url("../assets/panel.png");
-	background-size: cover;
-
-	// Display
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	text-align: center;
-
-	p {
-		padding: 0 5vmin;
-		font-size: calc((1.4vmin + 1.4vmax + 1.4vw) / 3);
-	}
-
-	.btn {
-		color: #000000;
-		font-size: calc((1.4vmin + 1.4vmax + 1.4vw) / 3);
-		background: #fff;
-		font-weight: 700;
-		text-align: center;
-		text-decoration: none;
-		cursor: pointer;
-		border: calc((0.3vmin + 0.3vmax + 0.3vw) / 3) solid #000;
-		border-radius: 5px;
-		outline: 0;
-		padding: calc((0.3vmin + 0.3vmax + 0.3vh)) calc((0.8vmin + 0.8vmax + 0.8vw));
-		display: inline-block;
-		transition: all 200ms;
-
-		transform: skew(-21deg) rotate(-2deg);
-
-		margin-top: auto;
-		margin-bottom: 3vh;
-
-		&:visited {
-			color: #fff;
-		}
-		&:hover {
-			background: #e05f41;
-			transform: skew(3deg);
-		}
-	}
-}
 </style>
