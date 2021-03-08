@@ -40,7 +40,7 @@ export default {
     },
     actions: {
         async movePlayer({ getters, dispatch, commit }, num) {
-            for (let i = 0; i < num * 10; i++) {
+            for (let i = 0; i < num; i++) {
                 await dispatch("makeStep");
 
                 // If player is finished
@@ -63,6 +63,7 @@ export default {
         async playerWins({ getters, commit, dispatch }) {
             commit("gameFinished", true);
             commit("score", await dispatch("calculateScore"));
+            dispatch("submitScore", { score: getters.score, name: getters.name });
         }
     }
 };

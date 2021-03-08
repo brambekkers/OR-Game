@@ -35,6 +35,7 @@
 
 			#panel {
 				position: absolute;
+				z-index: 1000;
 
 				// Set Size
 				width: 70vw;
@@ -59,6 +60,20 @@
 				p {
 					padding: 0 5vmin;
 					font-size: calc((1.4vmin + 1.4vmax + 1.4vw) / 3);
+				}
+
+				#scoreContainer {
+					overflow-y: scroll;
+					width: 90%;
+					border: 3px solid black;
+					border-radius: 5px;
+					height: 65%;
+
+					table {
+						width: 100%;
+
+						font-size: calc((1.4vmin + 1.4vmax + 1.4vw) / 3);
+					}
 				}
 
 				.mb-1 {
@@ -115,5 +130,27 @@
 				}
 			}
 		}
+	}
+
+	/* width */
+	::-webkit-scrollbar {
+		width: 10px;
+		cursor: pointer;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px grey;
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: #0b0708;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #394d5a;
+		cursor: pointer;
 	}
 </style>

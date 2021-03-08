@@ -10,6 +10,7 @@ import "firebase/analytics";
 
 export default {
     state: {
+        user: null,
         firebase: null,
         auth: null,
         db: null,
@@ -20,6 +21,7 @@ export default {
 
     getters: {
         watchers: (state) => state.watcher,
+        user: (state) => state.user,
         firebase: (state) => state.firebase,
         auth: (state) => state.firebase.auth(),
         db: (state) => state.firebase.firestore(),
@@ -29,7 +31,8 @@ export default {
 
     mutations: {
         firebase: (state, firebase) => (state.firebase = firebase),
-        watchers: (state, val) => state.watchers.push(val)
+        watchers: (state, val) => state.watchers.push(val),
+        user: (state, val) => (state.user = val)
     },
 
     actions: {
@@ -42,14 +45,17 @@ export default {
         },
         async signIn({ getters, dispatch }) {
             await getters.firebase.auth().signInAnonymously();
-            this.dispatch("userWatcher");
+            dispatch("userWatcher");
         },
-        userWatcher({ getters: { auth } }) {
+        userWatcher({ getters: { auth }, commit, dispatch }) {
             auth.onAuthStateChanged(async (user) => {
                 if (user) {
                     console.log("User signed in");
+                    commit("user", user);
+                    dispatch("scoresWatcher");
                 } else {
                     console.log("Not signed in");
+                    commit("user", null);
                 }
             });
         },

@@ -1,28 +1,19 @@
 <template>
 	<div id="game">
-		<transition
+		<transition-group
 			mode="out-in"
 			enter-active-class="animate__animated animate__fadeInDown"
 			leave-active-class="animate__animated animate__bounceOutUp"
 		>
 			<NewGamePanel v-if="!gameStarted" />
-		</transition>
 
-		<transition
-			mode="out-in"
-			enter-active-class="animate__animated animate__fadeInDown"
-			leave-active-class="animate__animated animate__bounceOutUp"
-		>
-			<FinishGamePanel v-if="gameStarted && gameFinished" />
-		</transition>
-
-		<transition
-			mode="out-in"
-			enter-active-class="animate__animated animate__fadeInDown"
-			leave-active-class="animate__animated animate__bounceOutUp"
-		>
 			<ActionPanel v-if="actionPanel && gameStarted && !gameFinished" />
-		</transition>
+
+			<FinishGamePanel
+				v-if="gameStarted && gameFinished && !highscorePanel"
+			/>
+			<Highscores v-if="gameStarted && gameFinished && highscorePanel" />
+		</transition-group>
 
 		<transition
 			mode="out-in"
@@ -45,6 +36,7 @@
 	import NewGamePanel from "@/components/NewGamePanel.vue";
 	import FinishGamePanel from "@/components/FinishGamePanel.vue";
 	import ActionPanel from "@/components/ActionPanel.vue";
+	import Highscores from "@/components/Highscores.vue";
 	import Throw from "@/components/Throw.vue";
 
 	export default {
@@ -56,9 +48,15 @@
 			Throw,
 			ActionPanel,
 			FinishGamePanel,
+			Highscores,
 		},
 		computed: {
-			...mapGetters(["gameStarted", "gameFinished", "actionPanel"]),
+			...mapGetters([
+				"gameStarted",
+				"gameFinished",
+				"actionPanel",
+				"highscorePanel",
+			]),
 		},
 	};
 </script>

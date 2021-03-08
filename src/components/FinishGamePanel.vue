@@ -3,8 +3,9 @@
 		<h1>Gewonnen!</h1>
 		<p>
 			Gefeliciteerd {{ name }}! Je hebt het spel gewonnen met
-			{{ tries }} worpen en een score van {{ score }} punten. Je deed in
-			totaal {{ minutes }} minuten over
+			<strong> {{ tries }} </strong> worpen en een score van
+			<strong>{{ score }}</strong> punten. Je deed in totaal
+			<strong>{{ minutes }}</strong> minuten over
 		</p>
 		<a class="btn" @click="click()">Bekijk de hoogste scores!</a>
 	</div>
@@ -23,6 +24,7 @@
 		},
 		methods: {
 			click() {
+				this.$store.commit("highscorePanel", true);
 				clickSound.play();
 			},
 		},

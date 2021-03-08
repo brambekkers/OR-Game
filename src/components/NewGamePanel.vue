@@ -9,10 +9,15 @@
 			hebben gespeeld.
 		</p>
 		<p class="mb-1">Wat is jouw naam:</p>
-		<input id="name" v-model="name" type="text" /><br />
+		<input
+			id="name"
+			class="animate__animated"
+			v-model="name"
+			type="text"
+		/><br />
 
 		<p>Speel het spel en probeer 2020 te verslaan.</p>
-		<a class="btn" @click="click()">Start het spel</a>
+		<a class="btn" type="submit" @click="click()">Start het spel</a>
 	</div>
 </template>
 
@@ -34,8 +39,19 @@
 		},
 		methods: {
 			click() {
-				clickSound.play();
-				this.$store.commit("gameStarted", true);
+				const el = document.getElementById("name");
+
+				if (this.name) {
+					clickSound.play();
+					this.$store.commit("gameStarted", true);
+				} else {
+					el.style.background = "#CD6C43";
+					el.classList.add("animate__shakeX");
+				}
+				setTimeout(() => {
+					el.classList.remove("animate__shakeX");
+					el.style.background = "#FFFFFF";
+				}, 1000);
 			},
 		},
 	};
