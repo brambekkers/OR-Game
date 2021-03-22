@@ -2,6 +2,7 @@
 	<div id="board">
 		<Title v-if="gameStarted" />
 		<Tile v-for="(tile, i) of tiles" :i="i" :tile="tile" :key="i" />
+		<Player />
 	</div>
 </template>
 
@@ -9,11 +10,12 @@
 	import TilesConfig from "@/config/tiles";
 	import Title from "@/components/Title";
 	import Tile from "@/components/Tile";
+	import Player from "@/components/Player";
 
 	import { mapGetters } from "vuex";
 
 	export default {
-		components: { Title, Tile },
+		components: { Title, Tile, Player },
 		data() {
 			return {
 				tiles: TilesConfig,

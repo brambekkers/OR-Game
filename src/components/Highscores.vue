@@ -19,7 +19,12 @@
 				</tbody>
 			</table>
 		</div>
-		<a class="btn" @click="click()">Nog een keer spelen</a>
+		<div class="btn-group">
+			<a class="btn btn-gray" @click="click()">Alles teruglezen</a>
+			<a class="btn btn-green" @click="resetGame()"
+				>Nog een keer spelen</a
+			>
+		</div>
 	</div>
 </template>
 
@@ -37,6 +42,11 @@
 		methods: {
 			click() {
 				clickSound.play();
+				this.$store.commit("overviewPanel", true);
+				this.$store.commit("highscorePanel", false);
+			},
+			resetGame() {
+				clickSound.play();
 				this.$store.dispatch("resetGame");
 			},
 		},
@@ -44,4 +54,10 @@
 </script>
 
 <style lang="scss" scoped>
+	.btn-group {
+		margin-top: 3vh;
+		a {
+			margin: 1vw;
+		}
+	}
 </style>

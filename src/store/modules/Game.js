@@ -4,6 +4,7 @@ export default {
         actionPanel: false,
         highscorePanel: false,
         gameFinished: false,
+        overviewPanel: false,
         startTime: null,
         finishTime: null,
         scores: []
@@ -20,6 +21,9 @@ export default {
         },
         highscorePanel(s) {
             return s.highscorePanel;
+        },
+        overviewPanel(s) {
+            return s.overviewPanel;
         },
         startTime(s) {
             return s.startTime;
@@ -45,6 +49,9 @@ export default {
         },
         highscorePanel(s, val) {
             s.highscorePanel = val;
+        },
+        overviewPanel(s, val) {
+            s.overviewPanel = val;
         }
     },
     actions: {
@@ -73,6 +80,7 @@ export default {
             });
         },
         resetGame({ state, commit }) {
+            state.actionPanel = false;
             state.highscorePanel = false;
             state.gameStarted = false;
             state.gameFinished = false;

@@ -54,12 +54,14 @@
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+				justify-content: space-between;
 
 				text-align: center;
 
 				p {
 					padding: 0 5vmin;
 					font-size: calc((1.4vmin + 1.4vmax + 1.4vw) / 3);
+					white-space: pre-wrap;
 				}
 
 				#scoreContainer {
@@ -117,7 +119,7 @@
 
 					transform: skew(-21deg) rotate(-2deg);
 
-					margin-top: auto;
+					margin-top: 3vh;
 					margin-bottom: 3vh;
 
 					&:visited {
@@ -127,6 +129,14 @@
 						background: #e05f41;
 						transform: skew(3deg);
 					}
+				}
+
+				.btn-green {
+					background: #b0e944 !important;
+				}
+
+				.btn-gray {
+					background: #b9b9b9 !important;
 				}
 			}
 		}
@@ -140,7 +150,7 @@
 
 	/* Track */
 	::-webkit-scrollbar-track {
-		box-shadow: inset 0 0 5px grey;
+		box-shadow: inset 0 0 5px rgba(0, 0, 0, 0);
 	}
 
 	/* Handle */

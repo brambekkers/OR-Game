@@ -56,12 +56,9 @@
 				const eys = await this.rollDices();
 				this.addTrie();
 				await this.movePlayer(eys);
-
-				// After roll is complete
 				setTimeout(() => {
-					this.actionPanel(true);
 					this.button = true;
-				}, 1000);
+				}, 1500);
 			},
 			rollDices() {
 				return new Promise((resolve, reject) => {

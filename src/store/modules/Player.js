@@ -28,8 +28,14 @@ export default {
         addPlayerPos(s) {
             s.playerPos++;
         },
+        removePlayerPos(s) {
+            s.playerPos--;
+        },
         addTrie(s) {
             s.tries++;
+        },
+        addTries(s, val) {
+            s.tries += val;
         },
         score(s, val) {
             s.score = val;
@@ -40,21 +46,41 @@ export default {
     },
     actions: {
         async movePlayer({ getters, dispatch, commit }, num) {
-            for (let i = 0; i < num; i++) {
-                await dispatch("makeStep");
+            if (num > 0) {
+                for (let i = 0; i < num; i++) {
+                    await dispatch("makeStep");
 
-                // If player is finished
-                if (getters.playerPos >= 35) {
-                    commit("playerPos", 35);
-                    dispatch("playerWins");
-                    break;
+                    // If player is finished
+                    if (getters.playerPos >= 35) {
+                        commit("playerPos", 35);
+                        dispatch("playerWins");
+                        break;
+                    }
+                }
+            } else {
+                console.log(num);
+                for (let i = 0; i > num; i--) {
+                    await dispatch("removeStep");
                 }
             }
+            // After roll is complete
+            setTimeout(() => {
+                commit("actionPanel", true);
+            }, 1000);
         },
         makeStep({ commit }) {
             return new Promise((resolve, reject) => {
                 setTimeout(() => {
                     commit("addPlayerPos");
+                    stepSound.play();
+                    resolve();
+                }, 300);
+            });
+        },
+        removeStep({ commit }) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    commit("removePlayerPos");
                     stepSound.play();
                     resolve();
                 }, 300);
