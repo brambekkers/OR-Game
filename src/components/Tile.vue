@@ -1,7 +1,5 @@
 <template>
-	<div class="tile" :style="tileStyle(tile)">
-		<img src="@/assets/player.png" class="player" v-if="playerPos === i" />
-	</div>
+	<div class="tile" :style="tileStyle(tile)" />
 </template>
 
 <script>
@@ -27,15 +25,5 @@
 <style lang="scss" scoped>
 	.tile {
 		position: absolute;
-		// background: red;
-
-		.player {
-			position: absolute;
-			height: calc(10vw * 9 / 16);
-			max-height: 10vh;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
 	}
 </style>

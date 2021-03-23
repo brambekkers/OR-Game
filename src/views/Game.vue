@@ -13,6 +13,9 @@
 				v-if="gameStarted && gameFinished && !highscorePanel"
 			/>
 			<Highscores v-if="gameStarted && gameFinished && highscorePanel" />
+			<OverviewPanel
+				v-if="gameStarted && gameFinished && overviewPanel"
+			/>
 		</transition-group>
 
 		<transition
@@ -35,6 +38,7 @@
 	import Credits from "@/components/Credits.vue";
 	import NewGamePanel from "@/components/NewGamePanel.vue";
 	import FinishGamePanel from "@/components/FinishGamePanel.vue";
+	import OverviewPanel from "@/components/OverviewPanel.vue";
 	import ActionPanel from "@/components/ActionPanel.vue";
 	import Highscores from "@/components/Highscores.vue";
 	import Throw from "@/components/Throw.vue";
@@ -49,6 +53,7 @@
 			ActionPanel,
 			FinishGamePanel,
 			Highscores,
+			OverviewPanel,
 		},
 		computed: {
 			...mapGetters([
@@ -56,6 +61,7 @@
 				"gameFinished",
 				"actionPanel",
 				"highscorePanel",
+				"overviewPanel",
 			]),
 		},
 	};

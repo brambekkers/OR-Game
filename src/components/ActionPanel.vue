@@ -1,7 +1,7 @@
 <template>
 	<div id="panel">
 		<h1>{{ playerPos }} - {{ tile.title }}</h1>
-		<p>
+		<p class="description">
 			{{ tile.description }}
 		</p>
 		<a class="btn" @click="click">Oke dan!</a>
@@ -10,20 +10,37 @@
 
 <script>
 	import TilesConfig from "@/config/tiles";
-	import { mapGetters } from "vuex";
+	import { mapMutations, mapGetters, mapActions } from "vuex";
 	const clickSound = new Audio(require("@/assets/sounds/click.ogg"));
 
 	export default {
+		data() {
+			return {
+				tiles: TilesConfig,
+			};
+		},
 		computed: {
 			...mapGetters(["playerPos"]),
 			tile() {
-				return TilesConfig[this.playerPos];
+				return this.tiles[this.playerPos];
 			},
 		},
 		methods: {
-			click() {
+			...mapMutations(["addTries", "actionPanel"]),
+			...mapActions(["movePlayer"]),
+			async click() {
+				const action = this.tiles[this.playerPos].action;
 				clickSound.play();
-				this.$store.commit("actionPanel", false);
+				this.actionPanel(false);
+
+				if (action) {
+					if (action.type === "wait") {
+						this.addTries(action.amount);
+					}
+					if (action.type === "move") {
+						await this.movePlayer(action.amount);
+					}
+				}
 			},
 		},
 	};
