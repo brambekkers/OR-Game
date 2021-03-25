@@ -63,10 +63,16 @@ export default [
     {
         title: "Besproken stukken",
         pos: 7,
-        description: "Hier komt de description",
+        description:
+            "Binnen de OR bespreken we gezamelijk de onderwerpen die binnenkomen. Iedereen binnen de OR heeft stemrecht. Soms zijn we het eens met elkaar maar soms ook niet. Jouw stem is belangrijk voor de tot standkoming van de gemeenschappelijke OR stem. Stem jij voor of stem jij tegen?",
         pos: { x: 42, y: 32 },
         size: { x: 7, y: 11 },
-        action: null
+        action: {
+            type: "choose",
+            description: "Stem jij in met het belangrijke OR-besluit?",
+            no: -2,
+            yes: 1
+        }
     },
     {
         title: "Rolverdeling",
@@ -93,7 +99,7 @@ export default [
         title: "Bestuur",
         pos: 10,
         description:
-            "Na jaren van een éénhoofdig CvB gehad te hebben was daar dit jaar Joke die naast Frans plaatsnam in het CvB. Een goede aanwinst voor het HMC1 Of we alles van haar hebben kunnen zien is nog maar de vraag omdat we Joke vooral als woordvoerder Corona hebben gehoord.  \n\n Desalniettemin is het volgens de OR goed dat het HMC sinds dit jaar een tweehoofdig CvB heeft. \n \n Eén gratis beurt van Joke! ",
+            "Na jaren van een éénhoofdig CvB gehad te hebben was daar dit jaar Joke die naast Frans plaatsnam in het CvB. Een goede aanwinst voor het HMC1 Of we alles van haar hebben kunnen zien is nog maar de vraag omdat we Joke vooral als woordvoerder Corona hebben gehoord.  \n\n Desalniettemin is het volgens de OR goed dat het HMC sinds dit jaar een tweehoofdig CvB heeft. \n \n Je mag van Joke nog een keer met de dobbelsteen gooien! ",
         pos: { x: 20, y: 30 },
         size: { x: 7, y: 11 },
         action: {
@@ -114,12 +120,18 @@ export default [
         }
     },
     {
-        title: "Stemmen",
+        title: "Welke richting?",
         pos: 12,
-        description: "Over anderhalf jaar worden er weer verkiezingen uitgeschreven voor de OR. Iets voor jou? Bij Ja 2 plaatsen vooruit. Bij Nee 2 plaatsen achteruit",
+        description:
+            "De OR staat voor het organisatiebelang maar doet dat vanuit de positie van het personeel. Het CVB kijkt ook naar het organisatiebelang maar meer vanuit de bedrijfsmatige kant. Soms lijkt het alsof we tegenover elkaar staan maar kijken we toch naar hetzelfde doel. \n \n Organisatiebelang vs. personeelsbelang...",
         pos: { x: 22, y: 52 },
         size: { x: 15, y: 10 },
-        action: null
+        action: {
+            type: "choose",
+            description: "Kun jij de verschillende belangen goed afwegen?",
+            no: -4,
+            yes: 1
+        }
     },
     {
         title: "OR Visie",
@@ -225,10 +237,14 @@ export default [
     {
         title: "Verlofkaart ",
         pos: 23,
-        description: "Hier komt de description",
+        description:
+            "Het ondersteunend personeel binnen het HMC kan niet altijd verlof opnemen tijdens de schoolvakanties. Voor deze onmisbare schakels binnen de organisatie  is er de verlofkaart uitgevonden. Het biedt hen de mogelijkheid om in de goedkope weken hun welverdiende vakantie op te nemen. Als beloning hiervoor mag je nog een keer met de dobbelsteen gooien",
         pos: { x: 37, y: 64 },
         size: { x: 6, y: 10 },
-        action: null
+        action: {
+            type: "wait",
+            amount: -1
+        }
     },
     {
         title: "Communicatie",
@@ -282,18 +298,24 @@ export default [
         action: null
     },
     {
-        title: "Title",
+        title: "Scholing",
         pos: 29,
-        description: "Hier komt de description",
+        description:
+            "Je bent nooit te oud om te leren. Voor de OR is scholing een belangrijk onderwerp. We bespreken elk jaar de regelingen m.b.t. to scholing van het personeel. \n\n Samen werken we aan de vooruitgang van het HMC. Stilstaan is letterlijk achteruitgaan.",
         pos: { x: 28, y: 83 },
         size: { x: 7, y: 12 },
-        action: null
+        action: {
+            type: "choose",
+            description: "Blijf jij jezelf ontwikkelen in 2021? Blijf jij leren?",
+            no: -2,
+            yes: 2
+        }
     },
     {
         title: "Vakantie- en verlofregeling 2021",
         pos: 30,
         description:
-            "De vakantie- en verlofregeling is een jaarlijks terugkerend artikel. De OR stemt via deze regeling indirect in met de jaarplanning. Een veel gehoorde misvatting is dat wij bepalen hoeveel vakantie dagen er zijn. Die macht heeft de OR helaas niet omdat dit al is geregeld in de CAO. \n\n Misschien is het goed om de vakantie en verlofregeling er nog eens bij te pakken en hem goed door te lezen. Je krijgt daar één gratis beurt voor om dat te doen.",
+            "De vakantie- en verlofregeling is een jaarlijks terugkerend artikel. De OR stemt via deze regeling indirect in met de jaarplanning. Een veel gehoorde misvatting is dat de OR bepaalt hoeveel vakantie dagen er zijn. Die macht heeft de OR helaas niet omdat dit al is geregeld in de CAO. \n\n Misschien is het goed om de vakantie en verlofregeling er nog eens bij te pakken en hem goed door te lezen. Je krijgt daar één gratis beurt voor om dat te doen.",
         pos: { x: 36, y: 84 },
         size: { x: 7, y: 12 },
         action: {
@@ -305,7 +327,7 @@ export default [
         title: "Raad van toezicht",
         pos: 31,
         description:
-            "Wie zijn toch die mensen die altijd aan het eind van de middag borrelen in de hal? Nou... Dit is de raad van toezicht (RvT). Een belangrijk orgaan voor het HMC. Je ziet als medewerker weinig maar het zijn de strenge ogen van de Raad van Toezicht die samen met de OR Frans en Joke in de gaten houden. ",
+            "Wie zijn toch die mensen die altijd aan het eind van de middag borrelen in de hal? Nou... Dit is de Raad van toezicht (RvT). Een belangrijk orgaan voor het HMC. Je ziet als medewerker weinig maar het zijn de strenge ogen van de Raad van Toezicht die samen met de OR Frans en Joke in de gaten houden. ",
         pos: { x: 44, y: 83 },
         size: { x: 10, y: 12 },
         action: null
@@ -334,7 +356,8 @@ export default [
     {
         title: "Risico Inventarisatie en Evaluatie ",
         pos: 34,
-        description: "Lijmklem op je kop \n\n Ga negen stappen terug.",
+        description:
+            "Het is belangrijk dat de arbeidsomstandigheden en de veiligheid op de werkplek zijn geborgd. We willen immers allemaal veilig werken. Zowel mental als fysiek. Na een Ri&E krijgen we een groot document met alle uitkomsten te lezen. Gelukkig gaat het bijna altijd goed maar soms... \n\n Je krijgt een lijmklem op je kop... \n\n Ga negen stappen terug.",
         pos: { x: 76, y: 82 },
         size: { x: 5, y: 12 },
         action: {
@@ -346,7 +369,7 @@ export default [
         title: "Op naar 2021",
         pos: 35,
         description:
-            "Dit jaar geen kerstborrel met je collega's en een speech van de voorzitter van het CvB. We zaten alleen thuis achter Teams. Toch was de kerstvakantie voor vele een welkome vakantie  na al die maanden extra inzet en hard werken. \n\n Dit was 2020, nog twee weken genieten en dan begint 2021! ",
+            "Dit jaar geen kerstborrel met je collega's en een speech van de voorzitter van het CvB. We zaten alleen thuis achter Teams. Toch was de kerstvakantie voor vele een welkome vakantie na al die maanden extra inzet en hard werken. \n\n Dit was 2020, nog twee weken genieten en dan begint 2021! ",
         pos: { x: 82, y: 82 },
         size: { x: 7, y: 12 },
         action: null

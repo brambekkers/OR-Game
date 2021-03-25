@@ -26,7 +26,13 @@
 			},
 		},
 		methods: {
-			...mapMutations(["addTries", "actionPanel"]),
+			...mapMutations([
+				"addTries",
+				"actionPanel",
+				"choosePanel",
+				"chooseAction",
+				"throwButton",
+			]),
 			...mapActions(["movePlayer"]),
 			async click() {
 				const action = this.tiles[this.playerPos].action;
@@ -36,11 +42,23 @@
 				if (action) {
 					if (action.type === "wait") {
 						this.addTries(action.amount);
+						this.showThrowButton();
 					}
 					if (action.type === "move") {
 						await this.movePlayer(action.amount);
 					}
+					if (action.type === "choose") {
+						this.chooseAction(action);
+						this.choosePanel(true);
+					}
+				} else {
+					this.showThrowButton();
 				}
+			},
+			showThrowButton() {
+				setTimeout(() => {
+					this.throwButton(true);
+				}, 500);
 			},
 		},
 	};

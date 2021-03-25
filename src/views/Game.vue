@@ -5,8 +5,11 @@
 			enter-active-class="animate__animated animate__fadeInDown"
 			leave-active-class="animate__animated animate__bounceOutUp"
 		>
+			<PlayerInfo v-if="gameStarted" />
+
 			<NewGamePanel v-if="!gameStarted" />
 
+			<ChoosePanel v-if="choosePanel && gameStarted && !gameFinished" />
 			<ActionPanel v-if="actionPanel && gameStarted && !gameFinished" />
 
 			<FinishGamePanel
@@ -40,8 +43,10 @@
 	import FinishGamePanel from "@/components/FinishGamePanel.vue";
 	import OverviewPanel from "@/components/OverviewPanel.vue";
 	import ActionPanel from "@/components/ActionPanel.vue";
+	import ChoosePanel from "@/components/ChoosePanel.vue";
 	import Highscores from "@/components/Highscores.vue";
 	import Throw from "@/components/Throw.vue";
+	import PlayerInfo from "@/components/PlayerInfo";
 
 	export default {
 		name: "Home",
@@ -51,15 +56,18 @@
 			NewGamePanel,
 			Throw,
 			ActionPanel,
+			ChoosePanel,
 			FinishGamePanel,
 			Highscores,
 			OverviewPanel,
+			PlayerInfo,
 		},
 		computed: {
 			...mapGetters([
 				"gameStarted",
 				"gameFinished",
 				"actionPanel",
+				"choosePanel",
 				"highscorePanel",
 				"overviewPanel",
 			]),
