@@ -32,12 +32,12 @@ export default [
         title: "Online overleg",
         pos: 4,
         description:
-            "Hebben jullie weleens van Corona gehoord? Wij vergaderen voorlopig online via Teams. Ook de overlegmomenten met het CvB zijn online. Het aanspreken in de wandelgangen staan ook op een laag pitje. Best een aderlating. \n\n Bezoek de site van de GGD voor meer informatie en ga 1 stap terug. ",
+            "Hebben jullie weleens van Corona gehoord? Wij vergaderen voorlopig online via Teams. Ook de overlegmomenten met het CvB zijn online. Het aanspreken in de wandelgangen staan ook op een laag pitje. Best een aderlating. \n\n Bezoek de site van de GGD voor meer informatie en ga twee stappen terug. ",
         pos: { x: 80, y: 17 },
         size: { x: 10, y: 30 },
         action: {
             type: "move",
-            amount: -1
+            amount: -2
         }
     },
     {
@@ -116,7 +116,7 @@ export default [
     {
         title: "Stemmen",
         pos: 12,
-        description: "Hier komt de description",
+        description: "Over anderhalf jaar worden er weer verkiezingen uitgeschreven voor de OR. Iets voor jou? Bij Ja 2 plaatsen vooruit. Bij Nee 2 plaatsen achteruit",
         pos: { x: 22, y: 52 },
         size: { x: 15, y: 10 },
         action: null
@@ -154,12 +154,12 @@ export default [
         title: "OR training",
         pos: 16,
         description:
-            "De OR heeft in het najaar van 2020 twee scholingsdagen genoten, waarbij, naast teambuilding en onderlinge nadere kennismaken vanwege de nieuwe samenstelling van de or, een aantal thema's aan de orde zijn gekomen. Er is aandacht besteed aan de wettelijke kaders van de onderneminsraad, de WOR in vogelvlucht en ook zijn de persoonlijke werkstijlen van onze OR-leden aan de orde gekomen zodat de samenwerking geoptimaliseerd kan worden. Ook is er aandacht besteed aan rollenspelen en oefeningen hoe de OR een goed gesprek met het bestuur kan voeren. \n\n Een dergelijke tweedaagse geeft veel energie. Ga drie stappen vooruit!",
+            "De OR heeft in het najaar van 2020 twee scholingsdagen genoten, waarbij, naast teambuilding en onderlinge nadere kennismaken vanwege de nieuwe samenstelling van de or, een aantal thema's aan de orde zijn gekomen. Er is aandacht besteed aan de wettelijke kaders van de onderneminsraad, de WOR in vogelvlucht en ook zijn de persoonlijke werkstijlen van onze OR-leden aan de orde gekomen zodat de samenwerking geoptimaliseerd kan worden. Ook is er aandacht besteed aan rollenspelen en oefeningen hoe de OR een goed gesprek met het bestuur kan voeren. \n\n Een dergelijke tweedaagse geeft veel energie. Ga vier stappen vooruit!",
         pos: { x: 81, y: 63 },
         size: { x: 10, y: 10 },
         action: {
             type: "move",
-            amount: 3
+            amount: 4
         }
     },
     {
@@ -234,12 +234,12 @@ export default [
         title: "Communicatie",
         pos: 24,
         description:
-            "Waarom hoor ik dit nu pas? of Wat een lap tekst iedere keer weer. Voor de OR is transparant beleid en open communicatie een belangrijk speerpunt. Wij proberen geregeld iets van ons te laten horen op de welbekende kanalen. Daarnaast leggen we geregeld bij het CvB neer dat heldere communicatie over een bepaald onderwerp gewenst is. \n\n Toch gebeurt het nog te vaak dat er in de organisatie niet, te laat of onduidelijk wordt gecommuniceerd. Dit helpt de organisatie niet verder. Ga daarom vijf plekken terug. ",
+            "Waarom hoor ik dit nu pas? of Wat een lap tekst iedere keer weer. Voor de OR is transparant beleid en open communicatie een belangrijk speerpunt. Wij proberen geregeld iets van ons te laten horen op de welbekende kanalen. Daarnaast leggen we geregeld bij het CvB neer dat heldere communicatie over een bepaald onderwerp gewenst is. \n\n Toch gebeurt het nog te vaak dat er in de organisatie niet, te laat of onduidelijk wordt gecommuniceerd. Dit helpt de organisatie niet verder. Ga daarom zes plekken terug. ",
         pos: { x: 24, y: 64 },
         size: { x: 12, y: 10 },
         action: {
             type: "move",
-            amount: -5
+            amount: -6
         }
     },
     {
@@ -323,23 +323,23 @@ export default [
         title: "Reiskostenregeling",
         pos: 33,
         description:
-            "Tijdens de eerste lockdown was het wel fijn. Extra geld op je rekening terwijl je niet hoefde te reizen. Maar vanaf 2021 moeten we opeens al onze reizen declareren. En vergeet ook niet dat iemand al die declaraties moet goedkeuren... \n\n Een hoop gedoe waar niemand op zit te wachten. Is het de schuld van Visma, het CvB of de OR? Nee, het was de belastingdienst die dit van ons verwacht en de regels heeft aangescherpt. \n\n Gelukkig betekend het financieel niets voor ons maar plezier is het ook niet. \n\n Ga 3 stappen terug.",
+            "Tijdens de eerste lockdown was het wel fijn. Extra geld op je rekening terwijl je niet hoefde te reizen. Maar vanaf 2021 moeten we opeens al onze reizen declareren. En vergeet ook niet dat iemand al die declaraties moet goedkeuren... \n\n Een hoop gedoe waar niemand op zit te wachten. Is het de schuld van Visma, het CvB of de OR? Nee, het was de belastingdienst die dit van ons verwacht en de regels heeft aangescherpt. \n\n Gelukkig betekend het financieel niets voor ons maar plezier is het ook niet. \n\n Ga vier stappen terug.",
         pos: { x: 65, y: 83 },
         size: { x: 10, y: 12 },
         action: {
             type: "move",
-            amount: -3
+            amount: -4
         }
     },
     {
         title: "Risico Inventarisatie en Evaluatie ",
         pos: 34,
-        description: "Lijmklem op je kop \n\n Ga 10 stappen terug.",
+        description: "Lijmklem op je kop \n\n Ga negen stappen terug.",
         pos: { x: 76, y: 82 },
         size: { x: 5, y: 12 },
         action: {
             type: "move",
-            amount: -10
+            amount: -9
         }
     },
     {
