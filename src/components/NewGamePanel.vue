@@ -45,7 +45,7 @@
 					clickSound.play();
 					this.$store.commit("gameStarted", true);
 				} else {
-					el.style.background = "#CD6C43";
+					el.style.background = "#d74a43";
 					el.classList.add("animate__shakeX");
 				}
 				setTimeout(() => {

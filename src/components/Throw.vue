@@ -94,7 +94,7 @@
 		.btn {
 			color: #000000;
 			font-size: calc((1.4vmin + 1.4vmax + 1.4vw) / 3);
-			background: #e05f41;
+			background: #d74a43;
 			font-weight: 700;
 			text-align: center;
 			text-decoration: none;

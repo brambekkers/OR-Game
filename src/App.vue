@@ -126,7 +126,7 @@
 						color: #fff;
 					}
 					&:hover {
-						background: #e05f41;
+						background: #d74a43;
 						transform: skew(3deg);
 					}
 				}
