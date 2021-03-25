@@ -8,10 +8,10 @@ export default [
         action: null
     },
     {
-        title: "De OR leden",
+        title: "De OR-leden",
         pos: 2,
         description:
-            "De OR is een orgaan waarbij je geen permanente bezetting hebt. De leden komen en gaan. Dit jaar hebben we afscheid genomen van twee leden van de OR. Steve de Jong en Mila Bosman hebben de OR verlaten en er zijn twee nieuwe OR leden bij gekomen. Esseline Keeven en Elwin Stout pakken sinds dit jaar hun taken op. \n\n In totaal heeft de OR nu acht leden. Monique Asma, Robert van der Jagt, Kees Klaassen, Karin Sovová, Bram Bekkers, Mart Stravers, Esseline Keeven en Elwin Stout. \n \n Daarnaast heeft de OR één vaste plek gereserveerd voor een ambtelijke secretaris. ",
+            "De leden van de OR treden om de vier jaren tegelijk af. Soms gebeurd dat gedurende een zittingsperiode OR-leden de ondernemingsraad verlaten. Dit jaar hebben we afscheid genomen van twee leden. Steve de Jong en Mila Bosman hebben de OR verlaten. In de vervangendeplaats treden twee nieuwe OR leden in. Esseline Keeven en Elwin Stout pakken sinds dit jaar hun taken op. \n\n In totaal heeft de OR acht leden: Monique Asma, Robert van der Jagt, Kees Klaassen, Karin Sovová, Bram Bekkers, Mart Stravers, Esseline Keeven en Elwin Stout. \n \n Daarnaast heeft de OR één vaste plek gereserveerd voor een ambtelijke secretaris. ",
         pos: { x: 24, y: 17 },
         size: { x: 40, y: 12 },
         action: null
@@ -29,10 +29,10 @@ export default [
         }
     },
     {
-        title: "Online Overleg",
+        title: "Online overleg",
         pos: 4,
         description:
-            "Hebben jullie weleens van Corona gehoord? Wij vergaderen voorlopig online via Teams. Ook de overlegmomenten met het CvB zijn online. Het “spreken in de wandelgangen” staat ook op een laag pitje. Best een aderlating. \n\n Bezoek de site van de GGD voor meer informatie en ga 1 stap terug. ",
+            "Hebben jullie weleens van Corona gehoord? Wij vergaderen voorlopig online via Teams. Ook de overlegmomenten met het CvB zijn online. Het aanspreken in de wandelgangen staan ook op een laag pitje. Best een aderlating. \n\n Bezoek de site van de GGD voor meer informatie en ga 1 stap terug. ",
         pos: { x: 80, y: 17 },
         size: { x: 10, y: 30 },
         action: {
@@ -69,7 +69,7 @@ export default [
         action: null
     },
     {
-        title: "OR Rolverdeling",
+        title: "Rolverdeling",
         pos: 8,
         description:
             "Wie doet wat binnen het team. Iedereen in zijn kracht zetten dat is ons doel. In het OR- jaar 2020 zijn er verschillende rolverdelingen geweest. Zo is Bram Bekkers de voorzitter geweest en in het eerste halfjaar was Steve de Jong de vicevoorzitter. In de tweede helft van 2020 was Elwin Stout de vice voorzitter. Monique Asma heeft vanaf de zomer de rol van secretatis overgenomen van Mila Bosman. Robert van der Jagt was de vice-secretaris",
@@ -93,7 +93,7 @@ export default [
         title: "Bestuur",
         pos: 10,
         description:
-            "Na jaren van een éénhoofdig CVB gehad te hebben was daar dit jaar Joke die naast Frans plaatsnam in het college. Een goede aanwinst voor het HMC1 Of we alles van haar hebben kunnen zien is nog maar de vraag omdat we Joke vooral als woordvoerder Corona hebben gehoord.  \n\n Desalniettemin is het volgens de OR goed dat het HMC sinds dit jaar een tweehoofdig CVB heeft. \n \n Eén gratis beurt van Joke! ",
+            "Na jaren van een éénhoofdig CvB gehad te hebben was daar dit jaar Joke die naast Frans plaatsnam in het CvB. Een goede aanwinst voor het HMC1 Of we alles van haar hebben kunnen zien is nog maar de vraag omdat we Joke vooral als woordvoerder Corona hebben gehoord.  \n\n Desalniettemin is het volgens de OR goed dat het HMC sinds dit jaar een tweehoofdig CvB heeft. \n \n Eén gratis beurt van Joke! ",
         pos: { x: 20, y: 30 },
         size: { x: 7, y: 11 },
         action: {
@@ -102,10 +102,10 @@ export default [
         }
     },
     {
-        title: "Enquete Kaderbrief",
+        title: "Enquête Kaderbrief",
         pos: 11,
         description:
-            "De OR komt naar jou toe. Natuurlijk hebben we binnen de OR een beeld van hoe de organisatie ervoor staat maar het is voor ons heel belangrijk om te weten waar jullie tegenaan lopen en nog belangrijker: welke oplossingen jullie daarvoor zien. Dankzij alle medewerkers die de enquete voor de kaderbrief hebben ingevuld hebben wij een breed gedragen kaderbrief kunnen overhandigen aan het CvB waarin we aandacht vragen voor de onderwerpen als transparantie, besluitvorming, communicatie en werkdruk. \n \n Ook geven de uitkomsten van de enquete ons handvatten om onze OR-visie te her-ijken. Bedankt daarvoor! \n\n Ga twee stappen vooruit omdat je zulke goede input hebt gegeven!",
+            "De OR komt naar jou toe. Natuurlijk hebben we binnen de OR een beeld van hoe de organisatie ervoor staat maar het is voor ons heel belangrijk om te weten waar jullie tegenaan lopen en nog belangrijker: welke oplossingen jullie daarvoor zien. Dankzij alle medewerkers die de  enquête voor de kaderbrief hebben ingevuld hebben wij een breed gedragen kaderbrief kunnen overhandigen aan het CvB, waarin we aandacht vragen voor de onderwerpen als transparantie, besluitvorming, communicatie en werkdruk. \n \n Ook geven de uitkomsten van de  enquête ons handvatten om onze OR-visie te herijken. Bedankt daarvoor! \n\n Ga twee stappen vooruit omdat je zulke goede input hebt gegeven!",
         pos: { x: 10, y: 38 },
         size: { x: 9, y: 20 },
         action: {
@@ -133,7 +133,7 @@ export default [
         title: "Rooster onderzoek",
         pos: 14,
         description:
-            "Soms voelt het alsof je moet zwemmen... Als we iets vaak vanuit de achterban hebben gehoord dit jaar dan is het wel ‘het rooster’ en dan vooral vanuit de achterban in Amsterdam. Corona heeft een flinke druk uitgeoefend op de beschikbaarheid van lokalen. We realiseren ons echter heel goed dat het voor de Coronatijd ook niet altijd soepel was. Tijd voor een nieuwe aanpak? Een raamrooster? Meer ondersteuning voor de roostermakers? \n\n De OR heeft een onafhankelijk onderzoek gevraagd naar de roosters. Hopelijk wordt het snel beter!  Voor nu moet je twee beurten wachten... ",
+            "Soms voelt het alsof je moet zwemmen... Als we iets vaak vanuit de achterban hebben gehoord dit jaar dan is het wel het rooster, en dan vooral vanuit de achterban in Amsterdam. Corona heeft een flinke druk uitgeoefend op de beschikbaarheid van lokalen. We realiseren ons echter heel goed dat het voor de Coronatijd ook niet altijd soepel was. Tijd voor een nieuwe aanpak? Een raamrooster? Meer ondersteuning voor de roostermakers? \n\n De OR heeft een onafhankelijk onderzoek gevraagd naar de roosters. Hopelijk wordt het snel beter!  Voor nu moet je twee beurten wachten... ",
         pos: { x: 66, y: 48 },
         size: { x: 10, y: 10 },
         action: {
@@ -145,7 +145,7 @@ export default [
         title: "Artikel 24.",
         pos: 15,
         description:
-            "Een stip op de horizon? Een blik vooruit? In ieder geval wil de OR 2x per jaar een vergadering belegd hebben met het CvB waarin we worden meegenomen in de langetermijnplannen van het HMC. Wij hopen hierdoor een goed beeld te krijgen van de onderwerpen waar wij in een vroeg stadium bij betrokken willen worden. En dat artikel 24.? Gewoon een stoffig stukje tekst uit de WOR (wet op de ondernemingsraden).",
+            "Een stip op de horizon? Een blik vooruit? In ieder geval wil de OR 2x per jaar een vergadering belegd hebben met het CvB waarin we worden meegenomen in de langetermijnplannen van het HMC. Wij hopen hierdoor een goed beeld te krijgen van de onderwerpen waar wij in een vroeg stadium bij betrokken willen worden. En dat artikel 24.? Gewoon een stoffig stukje tekst uit de WOR (Wet op de ondernemingsraden).",
         pos: { x: 78, y: 50 },
         size: { x: 15, y: 10 },
         action: null
@@ -154,7 +154,7 @@ export default [
         title: "OR training",
         pos: 16,
         description:
-            "De or heeft in het najaar van 2020 twee scholingsdagen genoten, waarbij – naast teambuilding en onderlinge nadere kennismaken vanwege de nieuwe samenstelling van de or – een aantal thema’s aan de orde zijn gekomen. Er is aandacht besteed aan de wettelijke kaders van de or via “de WOR in vogelvlucht” en ook zijn de persoonlijke werkstijlen van de or-leden aan de orde gekomen zodat de samenwerking geoptimaliseerd kan worden. Ook is er aandacht besteed aan rollenspelen en oefeningen hoe de or een goed gesprek met het bestuur kan voeren. \n\n Een dergelijke twee daagse geeft veel energie. Ga drie stappen vooruit!",
+            "De OR heeft in het najaar van 2020 twee scholingsdagen genoten, waarbij, naast teambuilding en onderlinge nadere kennismaken vanwege de nieuwe samenstelling van de or, een aantal thema's aan de orde zijn gekomen. Er is aandacht besteed aan de wettelijke kaders van de onderneminsraad, de WOR in vogelvlucht en ook zijn de persoonlijke werkstijlen van onze OR-leden aan de orde gekomen zodat de samenwerking geoptimaliseerd kan worden. Ook is er aandacht besteed aan rollenspelen en oefeningen hoe de OR een goed gesprek met het bestuur kan voeren. \n\n Een dergelijke tweedaagse geeft veel energie. Ga drie stappen vooruit!",
         pos: { x: 81, y: 63 },
         size: { x: 10, y: 10 },
         action: {
@@ -166,7 +166,7 @@ export default [
         title: "Bordsessie",
         pos: 17,
         description:
-            "Ben jij een echte vergadertijger? Wij stiekem niet echt. We zijn binnen de OR gestart met ‘bordsessies’, een onderdeel van de leerkrachtmethode die in Amsterdam rondwaart... We starten ons wekelijkse overleg met het bepalen van de onderwerpen waaraan gewerkt dient te worden en we verdelen deze onderwerpen onderling. Daarna gaan we uiteen en werken we efficiënt aan de uitgezette taken. We sluiten de middagen af door aan het einde van de middag de resultaten even kort aan elkaar terug te koppelen. Geen eindeloos geleuter dus! \n\n Ga 3 stappen naar voren.",
+            "Ben jij een echte vergadertijger? Wij stiekem niet echt. We zijn binnen de OR gestart met bordsessies, een onderdeel van de leerkrachtmethode die in Amsterdam rondwaart... We starten ons wekelijkse overleg met het bepalen van de onderwerpen waaraan gewerkt dient te worden en we verdelen deze onderwerpen onderling. Daarna gaan we uiteen en werken we efficiënt aan de uitgezette taken. We sluiten de middagen af door aan het einde van de middag de resultaten even kort aan elkaar terug te koppelen. Geen eindeloos geleuter dus! \n\n Ga 3 stappen naar voren.",
         pos: { x: 77, y: 68 },
         size: { x: 3.5, y: 10 },
         action: {
@@ -234,7 +234,7 @@ export default [
         title: "Communicatie",
         pos: 24,
         description:
-            "“Waarom hoor ik dit nu pas?” of “Wat een lap tekst iedere keer weer.” Voor de OR is transparant beleid en open communicatie een belangrijk speerpunt. Wij proberen geregeld iets van ons te laten horen op de welbekende kanalen. Daarnaast leggen we geregeld bij het CvB neer dat heldere communicatie over een bepaald onderwerp gewenst is. \n\n Toch gebeurt het nog te vaak dat er in de organisatie niet, te laat of onduidelijk wordt gecommuniceerd. Dit helpt de organisatie niet verder. Ga daarom vijf plekken terug. ",
+            "Waarom hoor ik dit nu pas? of Wat een lap tekst iedere keer weer. Voor de OR is transparant beleid en open communicatie een belangrijk speerpunt. Wij proberen geregeld iets van ons te laten horen op de welbekende kanalen. Daarnaast leggen we geregeld bij het CvB neer dat heldere communicatie over een bepaald onderwerp gewenst is. \n\n Toch gebeurt het nog te vaak dat er in de organisatie niet, te laat of onduidelijk wordt gecommuniceerd. Dit helpt de organisatie niet verder. Ga daarom vijf plekken terug. ",
         pos: { x: 24, y: 64 },
         size: { x: 12, y: 10 },
         action: {
@@ -246,7 +246,7 @@ export default [
         title: "Digitalisering",
         pos: 25,
         description:
-            "Een ping hier een notificatie daar… Soms om gek van te worden. Voor de Coronacrisis was het al erg maar nu zie je door het aantal verschillende apps het bos niet meer. Gelukkig geven de verschillende platformen ons ook weer houvast voor het onderwijs en kunnen we op een flink aantal nieuwe manier in contact staan met onze studenten. \n\n Binnen de OR kwam dit onderwerp vaker terug dit jaar. Wat kunnen we van de medewerkers vragen? Is er voldoende scholing? Moet er niet een app plafond komen? En dan hebben we ook nog de veiligheidsaspecten met data en avg… \n \n De apps geven ons de mogelijkheid om samen met de studenten een stap naar toekomstig onderwijs te zetten maar tegelijkertijd is het soms ook een hoofdpijndossier. ",
+            "Een ping hier een notificatie daar. Soms om gek van te worden. Voor de Coronacrisis was het al erg maar nu zie je door het aantal verschillende apps het bos niet meer. Gelukkig geven de verschillende platformen ons ook weer houvast voor het onderwijs en kunnen we op een flink aantal nieuwe manier in contact staan met onze studenten. \n\n Binnen de OR kwam dit onderwerp vaker terug dit jaar. Wat kunnen we van de medewerkers vragen? Is er voldoende scholing? Moet er niet een app plafond komen? En dan hebben we ook nog de veiligheidsaspecten met data en avg! \n \n De apps geven ons de mogelijkheid om samen met de studenten een stap naar toekomstig onderwijs te zetten maar tegelijkertijd is het soms ook een hoofdpijndossier. ",
         pos: { x: 17, y: 64 },
         size: { x: 6, y: 11 },
         action: null
@@ -255,7 +255,7 @@ export default [
         title: "Richting 2021",
         pos: 26,
         description:
-            "We zijn inmiddels een flink eind op weg in 2020. De pepernoten liggen alweer in de schappen en de lessen krijgen weer vorm. Eigenlijk loopt alles op rolletjes. Nu maar hopen dat een tweede lockdown uitblijft…  \n \n Ga 5 plaatsen vooruit.",
+            "We zijn inmiddels een flink eind op weg in 2020. De pepernoten liggen alweer in de schappen en de lessen krijgen weer vorm. Eigenlijk loopt alles op rolletjes. Nu maar hopen dat een tweede lockdown uitblijft!  \n \n Ga 5 plaatsen vooruit.",
         pos: { x: 7, y: 71 },
         size: { x: 10, y: 8 },
         action: {
@@ -267,7 +267,7 @@ export default [
         title: "Communicatie, openheid en transparantie",
         pos: 27,
         description:
-            "Communicatie, openheid en transparantie … We lijken het maar niet te leren. Terwijl we achteraf concluderen dat er niets geheims aan het onderwerp was. Toch voelt het alsof er iets achter onze rug is besloten.  \n\n Eén van de speerpunten van de OR is dan ook het onderwerp openheid en transparantie. Dit is het onderwerp wat vaak terugkomt wanneer we met de achterban praten. We strijden met de OR voor openheid transparantie en je raad het al communicatie!",
+            "Communicatie, openheid en transparantie. We lijken het maar niet te leren. Terwijl we achteraf concluderen dat er niets geheims aan het onderwerp was. Toch voelt het alsof er iets achter onze rug is besloten.  \n\n Eén van de speerpunten van de OR is dan ook het onderwerp openheid en transparantie. Dit is het onderwerp wat vaak terugkomt wanneer we met de achterban praten. We strijden met de OR voor openheid transparantie en je raad het al communicatie!",
         pos: { x: 8, y: 81 },
         size: { x: 12, y: 12 },
         action: null
@@ -323,7 +323,7 @@ export default [
         title: "Reiskostenregeling",
         pos: 33,
         description:
-            "Tijdens de eerste lockdown was het wel fijn. Extra geld op je rekening terwijl je niet hoefde te reizen. Maar vanaf 2021 moeten we opeens al onze reizen declareren. En vergeet ook niet dat iemand al die declaraties moet goedkeuren... \n\n Een hoop gedoe waar niemand op zit te wachten. Is het de schuld van Visma, het CVB of de OR? Nee, het was de belastingdienst die dit van ons verwacht en de regels heeft aangescherpt. \n\n Gelukkig betekend het financieel niets voor ons maar plezier is het ook niet. \n\n Ga 3 stappen terug.",
+            "Tijdens de eerste lockdown was het wel fijn. Extra geld op je rekening terwijl je niet hoefde te reizen. Maar vanaf 2021 moeten we opeens al onze reizen declareren. En vergeet ook niet dat iemand al die declaraties moet goedkeuren... \n\n Een hoop gedoe waar niemand op zit te wachten. Is het de schuld van Visma, het CvB of de OR? Nee, het was de belastingdienst die dit van ons verwacht en de regels heeft aangescherpt. \n\n Gelukkig betekend het financieel niets voor ons maar plezier is het ook niet. \n\n Ga 3 stappen terug.",
         pos: { x: 65, y: 83 },
         size: { x: 10, y: 12 },
         action: {
@@ -346,7 +346,7 @@ export default [
         title: "Op naar 2021",
         pos: 35,
         description:
-            "Dit jaar geen kerstborrel met je collega's en een speech van de voorzitter van het CVB. We zaten alleen thuis achter Teams. Toch was de kerstvakantie voor vele een welkome vakantie  na al die maanden extra inzet en hard werken. \n\n Dit was 2020, nog twee weken genieten en dan begint 2021! ",
+            "Dit jaar geen kerstborrel met je collega's en een speech van de voorzitter van het CvB. We zaten alleen thuis achter Teams. Toch was de kerstvakantie voor vele een welkome vakantie  na al die maanden extra inzet en hard werken. \n\n Dit was 2020, nog twee weken genieten en dan begint 2021! ",
         pos: { x: 82, y: 82 },
         size: { x: 7, y: 12 },
         action: null
