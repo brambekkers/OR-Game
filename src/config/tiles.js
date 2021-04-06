@@ -52,7 +52,8 @@ export default [
     {
         title: "Wacht maar even",
         pos: 6,
-        description: "Je moet wachten op de stukken die je zullen worden toegezonden... \n\n Eén extra beurt. ",
+        description:
+            "Als lid van de ondernemingsraad moet je soms in korte tijd veel lezen en op andere momenten heb je meer tijd voor de uitwerking. Het is een taak die gepaard gaat met piek belasting maar ook rustigere momenten. \n\n Op dit moment moet je wachten op de stukken die je zullen worden toegezonden... Dit kost je één extra beurt. ",
         pos: { x: 50, y: 33 },
         size: { x: 9, y: 12 },
         action: {
@@ -78,7 +79,7 @@ export default [
         title: "Rolverdeling",
         pos: 8,
         description:
-            "Wie doet wat binnen het team. Iedereen in zijn kracht zetten dat is ons doel. In het OR- jaar 2020 zijn er verschillende rolverdelingen geweest. Zo is Bram Bekkers de voorzitter geweest en in het eerste halfjaar was Steve de Jong de vicevoorzitter. In de tweede helft van 2020 was Elwin Stout de vice voorzitter. Monique Asma heeft vanaf de zomer de rol van secretatis overgenomen van Mila Bosman. Robert van der Jagt was de vice-secretaris",
+            "Wie doet wat binnen het team. Iedereen in zijn kracht zetten dat is ons doel. In het OR- jaar 2020 zijn er verschillende rolverdelingen geweest. Zo is Bram Bekkers de voorzitter in 2020 geweest en in het eerste halfjaar was Steve de Jong de vicevoorzitter. In de tweede helft van 2020 was Elwin Stout de vice voorzitter. Monique Asma heeft vanaf de zomer de rol van secretatis overgenomen van Mila Bosman. Robert van der Jagt was de vice-secretaris",
         pos: { x: 36.5, y: 30 },
         size: { x: 5, y: 11 },
         action: null
@@ -136,7 +137,8 @@ export default [
     {
         title: "OR Visie",
         pos: 13,
-        description: "Hier komt de description",
+        description:
+            "Met de komst van de nieuwe leden hebben we onze OR-visie aangescherp. We zullen met deze visie in onze achterzak kijken naar alle OR-onderwerpen. \n \n \n De OR ziet het als zijn taak om als vertegenwoordiger van alle medewerkers van het HMC op professionele wijze bij te dragen aan uitvoering en borging van de missie en visie van het HMC. \n\n Hierbij redeneren wij in het belang van de organisatie en dienen als brug tussen bestuur en achterban met de organisatie als voedingsbron. Zo streven wij naar een bloeiende, betrokken organisatie met tevreden medewerkers. \n \n Wil je meer weten over de speerpunten van de OR en wil je lezen hoe wij vorm geven aan deze visie. Kijk dan op de intranet pagina.",
         pos: { x: 38, y: 49 },
         size: { x: 27, y: 10 },
         action: null
@@ -238,7 +240,7 @@ export default [
         title: "Verlofkaart ",
         pos: 23,
         description:
-            "Het ondersteunend personeel binnen het HMC kan niet altijd verlof opnemen tijdens de schoolvakanties. Voor deze onmisbare schakels binnen de organisatie  is er de verlofkaart uitgevonden. Het biedt hen de mogelijkheid om in de goedkope weken hun welverdiende vakantie op te nemen. Als beloning hiervoor mag je nog een keer met de dobbelsteen gooien",
+            "Het ondersteunend personeel binnen het HMC kan niet altijd verlof opnemen tijdens de schoolvakanties. Voor deze onmisbare schakels binnen de organisatie  is er de verlofkaart uitgevonden. Het biedt hen de mogelijkheid om in de goedkope weken hun welverdiende vakantie op te nemen. \n\n  Als beloning hiervoor mag je nog een keer met de dobbelsteen gooien",
         pos: { x: 37, y: 64 },
         size: { x: 6, y: 10 },
         action: {
