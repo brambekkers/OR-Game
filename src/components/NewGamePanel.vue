@@ -35,17 +35,18 @@ export default {
 		click() {
 			const el = document.getElementById("name");
 
-			if (this.name) {
-				clickSound.play();
-				this.$store.commit("gameStarted", true);
-			} else {
-				el.style.background = "#CD6C43";
-				el.classList.add("animate__shakeX");
-			}
-			setTimeout(() => {
-				el.classList.remove("animate__shakeX");
-				el.style.background = "#FFFFFF";
-			}, 1000);
+				if (this.name) {
+					clickSound.play();
+					this.$store.commit("gameStarted", true);
+				} else {
+					el.style.background = "#d74a43";
+					el.classList.add("animate__shakeX");
+				}
+				setTimeout(() => {
+					el.classList.remove("animate__shakeX");
+					el.style.background = "#FFFFFF";
+				}, 1000);
+			},
 		},
 	},
 };

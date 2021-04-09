@@ -6,30 +6,30 @@
 			enter-active-class="animate__animated animate__bounceIn"
 			leave-active-class="animate__animated animate__bounceOut"
 		>
-			<a class="btn" @click="throwDices()" v-if="button"
+			<a class="btn" @click="throwDices()" v-if="throwButtonVal"
 				>Gooi de dobbelsteen</a
 			>
 			<div class="dices" v-else>
 				<img src="@/assets/dices/dieWhite1.png" v-if="dieEye === 1" />
 				<img
 					src="@/assets/dices/dieWhite2.png"
-					v-if="dieEye === 2 && !button"
+					v-if="dieEye === 2 && !throwButtonVal"
 				/>
 				<img
 					src="@/assets/dices/dieWhite3.png"
-					v-if="dieEye === 3 && !button"
+					v-if="dieEye === 3 && !throwButtonVal"
 				/>
 				<img
 					src="@/assets/dices/dieWhite4.png"
-					v-if="dieEye === 4 && !button"
+					v-if="dieEye === 4 && !throwButtonVal"
 				/>
 				<img
 					src="@/assets/dices/dieWhite5.png"
-					v-if="dieEye === 5 && !button"
+					v-if="dieEye === 5 && !throwButtonVal"
 				/>
 				<img
 					src="@/assets/dices/dieWhite6.png"
-					v-if="dieEye === 6 && !button"
+					v-if="dieEye === 6 && !throwButtonVal"
 				/>
 			</div>
 		</transition>
@@ -37,28 +37,27 @@
 </template>
 
 <script>
-	import { mapActions, mapMutations } from "vuex";
+	import { mapActions, mapGetters, mapMutations } from "vuex";
 	const dieShuffle = new Audio(require("@/assets/sounds/dieShuffle1.ogg"));
 	const dieThrow = new Audio(require("@/assets/sounds/dieThrow3.ogg"));
 
 	export default {
 		data() {
 			return {
-				button: false,
 				dieEye: 0,
 			};
 		},
+		computed: {
+			...mapGetters(["throwButtonVal"]),
+		},
 		methods: {
 			...mapActions(["movePlayer"]),
-			...mapMutations(["actionPanel", "addTrie"]),
+			...mapMutations(["actionPanel", "addTrie", "throwButton"]),
 			async throwDices() {
-				this.button = false;
+				this.throwButton(false);
 				const eys = await this.rollDices();
 				this.addTrie();
 				await this.movePlayer(eys);
-				setTimeout(() => {
-					this.button = true;
-				}, 1500);
 			},
 			rollDices() {
 				return new Promise((resolve, reject) => {
@@ -68,6 +67,7 @@
 
 						const interval = setInterval(() => {
 							this.dieEye = Math.floor(Math.random() * 6) + 1;
+							// this.dieEye = 28;
 						}, 100);
 
 						setTimeout(() => {
@@ -80,7 +80,7 @@
 		},
 		mounted() {
 			setTimeout(() => {
-				this.button = true;
+				this.throwButton(true);
 			}, 1000);
 		},
 	};
@@ -94,7 +94,7 @@
 		.btn {
 			color: #000000;
 			font-size: calc((1.4vmin + 1.4vmax + 1.4vw) / 3);
-			background: #e05f41;
+			background: #d74a43;
 			font-weight: 700;
 			text-align: center;
 			text-decoration: none;

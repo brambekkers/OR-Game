@@ -1,6 +1,7 @@
 <template>
 	<div id="board">
-		<Title v-if="gameStarted" />
+		<!-- <Title v-if="gameStarted" /> -->
+
 		<Tile v-for="(tile, i) of tiles" :i="i" :tile="tile" :key="i" />
 		<Player />
 	</div>
